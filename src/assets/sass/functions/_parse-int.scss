@@ -1,0 +1,12 @@
+// Remove the unit of a length
+// @param {Number or String} $number Number to remove unit from
+// @return {Number} Unitless number
+// @author Hugo Giraudel (https://css-tricks.com/snippets/sass/strip-unit-function/)
+
+@function parse-int($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}

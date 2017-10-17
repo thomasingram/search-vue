@@ -1,0 +1,9 @@
+// Applies the psedo-element display table clearfix hack to an element
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

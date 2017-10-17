@@ -1,0 +1,23 @@
+.btn {
+  -webkit-appearance: none !important;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: $scooter;
+  border-color: $scooter;
+  color: $mirage;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $brightgray;
+    border-color: $brightgray;
+    color: $scooter;
+  }
+}
+
+.btn-link {
+  font-weight: 400;
+}

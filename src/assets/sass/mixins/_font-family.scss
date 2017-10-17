@@ -1,0 +1,20 @@
+// Returns the requested font-family
+// @param {String} $family Family name
+//   @default body
+// @return populated CSS font-family declaration
+
+@mixin font-family($family: body) {
+  @if $family == header or $family == title {
+    font-family:
+      "Open Sans",
+      sans-serif;
+  }
+  @else if $family == mono or $family == monospace {
+    font-family: monospace;
+  }
+  @else {
+    font-family:
+      "Open Sans",
+      sans-serif;
+  }
+}
